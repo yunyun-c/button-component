@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+.button {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  box-shadow: 5px 3px 2px gainsboro;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.button--type-default {
+  border: 1px solid rgb(1, 155, 252);
+  background-color: rgb(13, 82, 245);
+  color: white;
+}
+
+.button--type-outline {
+  background-color: transparent;
+  border: 2px solid rgb(13, 82, 245);
+  color: rgb(13, 82, 245);
+}
+
+.button--type-text {
+  background-color: transparent;
+  border: none;
+  color: rgb(13, 82, 245);
+  font-size: 1.2rem;
+}
+
+.button--no-shadow {
+  box-shadow: none;
+  background-color: white;
+}
+
+.button--disabled {
+  text-decoration: line-through;
+  background-color: grey;
+  border: 1px dotted darkgray;
+}
+
+.button--icon-left {
+  .material-icons {
+    padding-right: 0.5rem;
+  }
+}
+
+.button--icon-right {
+  .material-icons {
+    padding-left: 0.5rem;
+  }
+}
+
+.button--size-small {
+  font-size: 0.75rem;
+  padding: 0.25rem 1rem;
+}
+
+.button--size-medium {
+  font-size: inherit;
+}
+
+.button--size-large {
+  font-size: 2rem;
+  padding: 1.25rem 1.75rem;
+}
+
+.button--type-primary {
+  border: 1px solid #940df5;
+  background-color: rgb(76, 4, 144);
+  color: white;
+}
+
+.button--type-secondary {
+  border: 1px solid rgb(195, 85, 127);
+  background-color: #c35687;
+  color: white;
+}
+
+.button--type-danger {
+  border: 1px solid rgb(211, 13, 46);
+  background-color: #f50d2c;
+  color: white;
+}
+
+.button--type-success {
+  border: 1px solid rgb(13, 107, 6);
+  background-color: #3a8e0e;
+  color: white;
+}
+
+/* Add styles for hover and focus states */
+.button:hover,
+.button:focus {
+  color: black;
+  background-color: gold;
+  border: goldenrod;
+}
