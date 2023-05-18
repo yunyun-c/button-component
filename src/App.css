@@ -106,3 +106,36 @@ footer p {
   font-size: var(--p-size);
   color: var(--second-color);
 }
+
+@media (min-width: 375px) {
+  .App {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+  }
+  /* header style */
+
+  header {
+    padding: 1rem;
+    height: 10vh;
+    position: sticky;
+    z-index: 99;
+    top: 0;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .button {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  footer {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
